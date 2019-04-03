@@ -1002,13 +1002,11 @@ textarea {
 
 aside.left-panel {
   background: #272c33;
-  display: table-cell;
-  height: 100vh;
+  display: flex;
+  height: 100%;
   min-height: 100%;
-  padding: 0 25px;
-  vertical-align: top;
-  width: 280px;
-  -webkit-transition:width 0.3s ease;
+  width: 20%;
+  -webkit-transition: width 0.3s ease;
   transition: width 0.3s ease; }
 
 .navbar {
@@ -1017,11 +1015,14 @@ aside.left-panel {
   border: none;
   display: block;
   margin: 0 0 100px;
-  padding: 0; }
-  .navbar .navbar-header {
-    float: none;
+  padding: 0;
+}
+
+.navbar .navbar-header{
     text-align: center;
-    width: 100%; }
+    width: 100%;
+}
+
   .navbar .navbar-brand {
     border-bottom: 1px solid #4e4e52;
     color: #f1f2f7 !important;
@@ -1175,9 +1176,10 @@ aside.left-panel {
 body.open .navbar .navbar-brand.hidden {
   display: block; }
 
-.open aside.left-panel {
-  max-width: 70px;
-  width: 70px; }
+.open aside.left-panel{
+  max-width: 5%;
+  width: 5%;
+}
   .open aside.left-panel .navbar .navbar-brand {
     display: none; }
     .open aside.left-panel .navbar .navbar-brand.hidden {
@@ -1262,66 +1264,86 @@ body.open .navbar .navbar-brand.hidden {
 
 /* Right panel */
 .right-panel {
-  display: table-cell;
-  padding-left: 0 !important;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease; }
-  .right-panel .breadcrumbs {
-    background-color: #fff;
+	background-color: #f2f7fb;
+	display: flex;
+	flex-flow: column nowrap;
+	width: 80%;
+	-webkit-transition: all 0.35s ease;
+	transition: all 0.35s ease;
+}
+
+.right-panel > .breadcrumbs {
+    background-color: transparent;
     display: inline-block;
-    margin-top: 0;
+    margin-top: 10px;
     padding: 0 5px;
-    width: 100%; }
-    .right-panel .breadcrumbs .col-lg-8 .page-header {
-      float: left; }
-  .right-panel .page-header {
+    width: 100%;
+}
+
+.right-panel .breadcrumbs .col-lg-8 .page-header{
+	float: left;
+}
+
+.right-panel .page-header{
     min-height: 50px;
     margin: 0;
     padding: 0 15px;
-    background: #ffffff;
-    border-bottom: 0; }
-    .right-panel .page-header h1 {
-      font-size: 18px;
-      padding: 15px 0; }
-    .right-panel .page-header .breadcrumb {
-      margin: 0;
-      padding: 13.5px 0;
-      background: #fff;
-      text-transform: capitalize; }
+    background: transparent;
+    border-bottom: 0;
+}
+
+.right-panel .page-header h1 {
+	font-size: 18px;
+	padding: 15px 0;
+}
+
+.right-panel .page-header .breadcrumb{
+	margin: 0;
+	padding: 13.5px 0;
+	background: transparent;
+	text-transform: capitalize;
+}
     .right-panel .page-header .breadcrumb > li + li:before {
       padding: 0 5px;
       color: #ccc;
       content: "/\00a0"; }
 
 .right-panel header.header {
-  background: #fff;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-  clear: both;
-  display: inline-block;
-  padding: 15px 20px 13px;
-  width: 100%; }
+	background: #fff;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+	clear: both;
+	display: inline-block;
+	padding: 15px 20px 13px 0;
+	width: 100%;
+}
 
 .open .right-panel {
-  margin-left: -210px; }
+	width: 95%;
+	min-width: 95%;
+	margin-left: 0;
+}
 
 header.fixed-top {
-  background: #fff;
-  padding: 20px; }
+	background: #fff;
+	padding: 20px;
+}
 
 .header-menu .col-sm-7 {
-  position: inherit; }
+	position: inherit;
+}
 
 .menutoggle {
-  background: #e74c3c;
-  border-radius: 50%;
-  color: #fff !important;
-  cursor: pointer;
-  font-size: 18px;
-  height: 43px;
-  line-height: 44px;
-  margin: -2px 20px 0 -57px;
-  text-align: center;
-  width: 43px; }
+	background: #e74c3c;
+	border-radius: 50%;
+	color: #fff !important;
+	cursor: pointer;
+	font-size: 18px;
+	height: 43px;
+	line-height: 44px;
+	transform: translateX(-50%);
+	text-align: center;
+	width: 43px;
+}
 
 .open .menutoggle i:before {
   content: "\f0a4"; }
@@ -2460,3 +2482,59 @@ header .form-inline {
         .right-panel .content #bootstrap-data-table_wrapper .table td,
         .right-panel .content #bootstrap-data-table_wrapper .table th {
           padding: 5px; } }
+
+
+/* ===================== ADDED BRING FEATURES ===================== */
+
+
+/* -- BASE -- */
+html,body{
+	height: 100%;
+	min-height: 100%;
+}
+
+body{
+	display: flex;
+}
+
+aside{
+	overflow: hidden;
+}
+
+nav.navbar-expand-sm.navbar-default{
+	height: 100%;
+	overflow-x: hidden;
+	padding: 0 25px;
+}
+
+main{
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+	/* -- STYLE -- */
+	nav.navbar-expand-sm.navbar-default::-webkit-scrollbar{
+		width: 3px;
+		background-color: transparent;
+	}
+
+	nav.navbar-expand-sm.navbar-default::-webkit-scrollbar-thumb{
+		background-color: rgba(255,255,255,0.5);
+	}
+
+	main::-webkit-scrollbar{
+		width: 3px;
+		background-color: transparent;
+	}
+
+	main::-webkit-scrollbar-thumb{
+		background-color: rgba(0,0,0,0.8);
+	}
+
+/* Fixes */
+
+@media screen and (min-width: 576px){
+	.navbar-expand-sm .navbar-collapse{
+		justify-content: center;
+	}
+}
