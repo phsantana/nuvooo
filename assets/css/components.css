@@ -7,7 +7,8 @@
   margin-bottom: 30px;
   box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1);
   background-color: white;
-  color: white;
+  font-family: "Quicksand";
+  color: inherit;
 }
 
 /* ============ BREAD CRUMB ICON ============ */
@@ -36,6 +37,11 @@
 }
 
 /*STYLE*/
+/* ============ CARD ============ */
+.card {
+  font-weight: 600;
+}
+
 /* ============ HELPER ============ */
 .blue {
   background-color: #4099FF;

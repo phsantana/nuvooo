@@ -32,7 +32,8 @@ $shadow: 0 0 5px 0 rgba(43,43,43,0.1),
 	margin-bottom: 30px;
 	box-shadow: $shadow;
 	background-color: white;
-	color: white;
+	font-family: 'Quicksand';
+	color: inherit;
 }
 
 	/* ============ BREAD CRUMB ICON ============ */
@@ -59,6 +60,11 @@ $shadow: 0 0 5px 0 rgba(43,43,43,0.1),
 	}
 
 /*STYLE*/
+	/* ============ CARD ============ */
+	.card{
+		font-weight: 600;
+	}
+
 	/* ============ HELPER ============ */
 	.blue{
 		background-color: color(flatblue);
