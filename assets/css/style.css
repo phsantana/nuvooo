@@ -1,4 +1,5 @@
 @import url("helper.css");
+@import url("widget.css");
 @import url("smacss/base.css");
 /* This css file is to over write bootstrap css
 --------------------------------------------------------- /
@@ -1229,10 +1230,11 @@ body.open .navbar .navbar-brand.hidden {
       .open aside.left-panel .navbar .navbar-nav li.menu-item-has-children ul {
         padding-left: 0; }
       .open aside.left-panel .navbar .navbar-nav li.menu-item-has-children .sub-menu {
+      	padding: 0 10px;
         display: block;
-        left: inherit;
-        right: -180px;
-        top: 0; }
+        left: calc(100% + 16px);
+        top: 0;
+    }
         .open aside.left-panel .navbar .navbar-nav li.menu-item-has-children .sub-menu li a {
           display: block;
           font-size: 14px;
@@ -1348,7 +1350,8 @@ header.fixed-top {
 }
 
 .open .menutoggle i:before {
-  content: "\2192"; }
+  content: "\f054";
+}
 
 .search-trigger {
   background: transparent;
@@ -2501,15 +2504,22 @@ body{
 	display: flex;
 }
 
-aside{
+body:not(.open) aside{
 	overflow: hidden;
-	height: 100%;
+}
+
+body:not(.open) .navbar-expand-sm.navbar-default{
+	overflow-x: hidden;
 }
 
 .navbar-expand-sm.navbar-default{
 	height: 100%;
-	overflow-x: hidden;
 	padding: 0 25px;
+	width: 100%;
+}
+
+body:not(.open) .navbar-expand-sm.navbar-default{
+	overflow-x: hidden;
 }
 
 main{
@@ -2538,7 +2548,6 @@ main{
 	}
 
 /* Fixes */
-
 @media screen and (min-width: 576px){
 	.navbar-expand-sm .navbar-collapse{
 		justify-content: center;

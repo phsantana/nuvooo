@@ -1,0 +1,17 @@
+$black: black;
+
+$colors: (
+	smooth-dark: lighten($black,30%)
+);
+
+@function color($color-name){
+	@return map-get($colors,$color-name);
+}
+
+.text-black{
+	color: black;
+}
+
+.text-black.smooth{
+	color: color(smooth-dark);
+}

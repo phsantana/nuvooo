@@ -1,3 +1,9 @@
-.text-black{
-	color: black !important;
+.text-black {
+  color: black;
 }
+
+.text-black.smooth {
+  color: #4d4d4d;
+}
+
+/*# sourceMappingURL=helper.css.map */
