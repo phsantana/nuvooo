@@ -1,0 +1,56 @@
+/*STRUCTURE*/
+/* ============ CARD ============ */
+.card {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1);
+  background-color: white;
+  color: white;
+}
+
+/* ============ BREAD CRUMB ICON ============ */
+.breadcrumb_icon {
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1);
+  margin: 10px;
+  color: white;
+}
+
+/*SIZE*/
+/* ============ BREAD CRUMB ICON ============ */
+.breadcrumb_icon.small {
+  padding: 10px 15px;
+  font-size: 15pt;
+}
+
+.breadcrumb_icon.medium {
+  padding: 20px 25px;
+  font-size: 25pt;
+}
+
+.breadcrumb_icon.large {
+  padding: 30px 35px;
+  font-size: 30pt;
+}
+
+/*STYLE*/
+/* ============ HELPER ============ */
+.blue {
+  background-color: #4099FF;
+}
+
+.green {
+  background-color: #2ED8B6;
+}
+
+.red {
+  background-color: #FF5370;
+}
+
+.yellow {
+  background-color: #FFB64D;
+}
+
+/*# sourceMappingURL=components.css.map */

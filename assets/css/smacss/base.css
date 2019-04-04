@@ -1,0 +1,29 @@
+/* ====================== STRUCTURE ====================== */
+body{
+	display: flex;
+	flex-flow: row nowrap;
+	font-family: 'Open Sans' sans-serif !important;
+	font-size: 16px;
+}
+
+html, body{
+	min-height: 100%;
+}
+
+ul{
+	list-style: none;
+}
+
+/* ====================== SIZE ====================== */
+html, body{
+	height: 100%;
+}
+
+body{
+	width: 100%;
+}
+
+/* ====================== STYLE ====================== */
+body{
+	background: #f1f2f7;
+}

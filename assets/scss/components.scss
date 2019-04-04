@@ -1,0 +1,74 @@
+$colors: (
+	flatblue: #4099FF,
+	flatgreen: #2ED8B6,
+	flatred: #FF5370,
+	flatyellow: #FFB64D
+);
+
+$sizes: (
+	small: 10px 15px,
+	medium: 20px 25px,
+	large: 30px 35px
+);
+
+$shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+		0 11px 6px -7px rgba(43,43,43,0.1);
+
+
+@function color($color-name){
+	@return map-get($colors, $color-name);
+}
+
+@function size($size-name){
+	@return map-get($sizes, $size-name);
+}
+
+/*STRUCTURE*/
+	/* ============ CARD ============ */
+.card{
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 30px;
+	box-shadow: $shadow;
+	background-color: white;
+	color: white;
+}
+
+	/* ============ BREAD CRUMB ICON ============ */
+	.breadcrumb_icon{
+		border-radius: 5px;
+		box-shadow: $shadow;
+		margin: 10px;
+		color: white;
+	}
+
+/*SIZE*/
+	/* ============ BREAD CRUMB ICON ============ */
+	.breadcrumb_icon.small{
+		padding: size(small);
+		font-size: 15pt;
+	}
+	.breadcrumb_icon.medium{
+		padding: size(medium);
+		font-size: 25pt;
+	}
+	.breadcrumb_icon.large{
+		padding: size(large);
+		font-size: 30pt;
+	}
+
+/*STYLE*/
+	/* ============ HELPER ============ */
+	.blue{
+		background-color: color(flatblue);
+	}	
+	.green{
+		background-color: color(flatgreen);
+	}	
+	.red{
+		background-color: color(flatred);
+	}	
+	.yellow{
+		background-color: color(flatyellow);
+	}
