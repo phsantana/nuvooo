@@ -1,0 +1,34 @@
+@import "mixins/responsiveness";
+
+/* ====================== STRUCTURE ====================== */
+aside{
+	@include mobile{
+		position: fixed;
+		z-index: 1;
+		width: 60%;
+
+		&.is-active{
+			transform: translateX(0);
+		}
+
+		&:not(.is-active){
+			transform: translateX(-100%);
+		}
+	}
+}
+
+.btn.navbar-toggler{
+	@include mobile{
+		animation: grow ease .5s;
+		&.is-active{
+			color: white;
+		}
+
+		&.is-active > i::before{
+			content: "\f053";
+			animation: grow ease .5s;
+		}
+	}
+}
+/* ====================== SIZE ====================== */
+/* ====================== STYLE ====================== */

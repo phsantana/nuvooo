@@ -1,0 +1,39 @@
+/* ====================== STRUCTURE ====================== */
+.btn.navbar-toggler {
+  z-index: 2;
+  transition: all ease 0.3s;
+}
+@media (max-width: 768px) {
+  .btn.navbar-toggler {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .btn.navbar-toggler {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .breadcrumbs {
+    padding: 10px 15px;
+  }
+}
+@media (max-width: 768px) {
+  .breadcrumbs {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+/* ====================== SIZE ====================== */
+/* ====================== STYLE ====================== */
+
+/*# sourceMappingURL=module.css.map */

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* ====================== STRUCTURE ====================== */
+@media (max-width: 768px) {
+  aside {
+    position: fixed;
+    z-index: 1;
+    width: 60%;
+  }
+  aside.is-active {
+    transform: translateX(0);
+  }
+  aside:not(.is-active) {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .btn.navbar-toggler {
+    animation: grow ease 0.5s;
+  }
+  .btn.navbar-toggler.is-active {
+    color: white;
+  }
+  .btn.navbar-toggler.is-active > i::before {
+    content: "";
+    animation: grow ease 0.5s;
+  }
+}
+
+/* ====================== SIZE ====================== */
+/* ====================== STYLE ====================== */
+
+/*# sourceMappingURL=state.css.map */

@@ -1,0 +1,40 @@
+@import "mixins/responsiveness";
+
+%flex-row-vcenter{
+	display: flex;
+	align-items: center;
+}
+
+/* ====================== STRUCTURE ====================== */
+.header-left{
+	@extend %flex-row-vcenter;
+}
+
+.header-flex{
+	@include desktop{
+		padding: 0;
+	}
+}
+
+.navbar-header{
+	@extend %flex-row-vcenter;
+
+	@include mobile{
+		justify-content: flex-end;
+	}
+
+	@include desktop{
+		justify-content: center;
+	}
+}
+/* ====================== SIZE ====================== */
+#right-panel{
+	@include mobile{
+		width: 100%;
+	}
+
+	@include desktop{
+		width: 80%;
+	}
+}
+/* ====================== STYLE ====================== */

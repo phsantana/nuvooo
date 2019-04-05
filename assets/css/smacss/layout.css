@@ -1,0 +1,38 @@
+.navbar-header, .header-left {
+  display: flex;
+  align-items: center;
+}
+
+/* ====================== STRUCTURE ====================== */
+@media (min-width: 768px) {
+  .header-flex {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-header {
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-header {
+    justify-content: center;
+  }
+}
+
+/* ====================== SIZE ====================== */
+@media (max-width: 768px) {
+  #right-panel {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  #right-panel {
+    width: 80%;
+  }
+}
+
+/* ====================== STYLE ====================== */
+
+/*# sourceMappingURL=layout.css.map */

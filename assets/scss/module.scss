@@ -1,0 +1,45 @@
+@import 'mixins/responsiveness';
+
+/* ====================== STRUCTURE ====================== */
+.btn.navbar-toggler{
+	z-index: 2;
+	transition: all ease .3s;
+
+	@include mobile{
+		display: block;
+	}
+
+	@include desktop{
+		display: none;
+	}
+}
+
+.breadcrumbs{
+	@include desktop{
+      padding: 10px 15px;
+	}
+
+	@include mobile{
+      padding: 0 10px;
+	}
+ }
+
+ .page-header{
+ 	@include mobile{
+ 		display: flex;
+ 		justify-content: flex-end;
+ 		align-items: center;
+ 	}
+ }
+
+/* ====================== SIZE ====================== */
+.btn.small{
+}
+
+.btn.medium{
+}
+
+.btn.large{
+}
+
+/* ====================== STYLE ====================== */
