@@ -1368,7 +1368,6 @@ header.fixed-top {
 	transform: translateX(-50%);
 	text-align: center;
 	width: 43px;
-	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
 	justify-content: center;
@@ -2453,8 +2452,6 @@ header .form-inline {
       aside.left-panel .navbar .menu-title {
         line-height: 30px;
         padding: 0; }
-  .menutoggle {
-    display: none; }
     .right-panel header.header {
       padding: 5px 10px 1px 5px; }
       .right-panel header.header div[class*="col"] {

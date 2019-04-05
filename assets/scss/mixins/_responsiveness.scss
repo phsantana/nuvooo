@@ -1,7 +1,5 @@
-$resolution: 768px;
-
-$desktop:	$resolution;
-$mobile: 	$resolution;
+$desktop:	769px;
+$mobile: 	768px;
 
 @mixin desktop{
 	@media (min-width: #{$desktop}){

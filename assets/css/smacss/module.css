@@ -9,13 +9,13 @@
     font-size: 18pt;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .btn.navbar-toggler {
     display: none;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .breadcrumbs {
     padding: 10px 15px;
   }
@@ -31,6 +31,17 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .menutoggle {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .menutoggle {
+    display: flex;
   }
 }
 

@@ -4,7 +4,7 @@
 }
 
 /* ====================== STRUCTURE ====================== */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .header-flex {
     padding: 0;
   }
@@ -15,7 +15,7 @@
     justify-content: flex-end;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .navbar-header {
     justify-content: center;
   }
@@ -27,7 +27,7 @@
     width: 100%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   #right-panel {
     width: 80%;
   }

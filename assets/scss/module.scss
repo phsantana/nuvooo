@@ -17,21 +17,31 @@
 
 .breadcrumbs{
 	@include desktop{
-      padding: 10px 15px;
+		padding: 10px 15px;
 	}
 
 	@include mobile{
-      padding: 0 10px;
+		padding: 0 10px;
 	}
- }
+}
 
- .page-header{
- 	@include mobile{
- 		display: flex;
- 		justify-content: flex-end;
- 		align-items: center;
- 	}
- }
+.page-header{
+	@include mobile{
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+}
+
+.menutoggle {
+	@include mobile{
+		display: none;
+	}
+
+	@include desktop{
+		display: flex;
+	}
+}
 
 /* ====================== SIZE ====================== */
 .btn.small{
