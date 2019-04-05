@@ -36,6 +36,14 @@ Array.from(document.querySelectorAll("#main-menu a"))
   });
 });
 
+//MENU
+document.querySelector('.btn.navbar-toggler').addEventListener('click', e =>
+  Array.from(document.querySelectorAll('aside,.btn.navbar-toggler'))
+  .forEach(element =>
+    element.classList.toggle('is-active')
+    )
+  );
+
 
 // const brandPrimary = '#20a8d8'
 const brandSuccess = '#4dbd74'

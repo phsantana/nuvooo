@@ -1,3 +1,5 @@
+@import "mixins/responsiveness";
+
 $colors: (
 	flatblue: #4099FF,
 	flatgreen: #2ED8B6,
@@ -29,11 +31,17 @@ $shadow: 0 0 5px 0 rgba(43,43,43,0.1),
 	cursor: pointer;
 	border: none;
 	border-radius: 5px;
-	margin-bottom: 30px;
 	box-shadow: $shadow;
 	background-color: white;
 	font-family: 'Quicksand';
 	color: inherit;
+
+	@include desktop{
+		margin-bottom: 30px;
+	}
+	@include mobile{
+		margin: 5px;
+	}
 }
 
 	/* ============ BREAD CRUMB ICON ============ */

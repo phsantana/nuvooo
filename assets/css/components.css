@@ -4,11 +4,20 @@
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  margin-bottom: 30px;
   box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1);
   background-color: white;
   font-family: "Quicksand";
   color: inherit;
+}
+@media (min-width: 768px) {
+  .card {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    margin: 5px;
+  }
 }
 
 /* ============ BREAD CRUMB ICON ============ */

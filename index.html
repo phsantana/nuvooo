@@ -39,9 +39,9 @@
         <nav class="navbar navbar-expand-sm navbar-default">
 
             <div class="navbar-header">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
-                </button>
+                </button> -->
                 <a class="navbar-brand" href="./index.html"><img src="images/logo.png" alt="Logo"></a>
                 <a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo"></a>
             </div>
@@ -182,11 +182,14 @@
             <div class="header-menu">
 
                 <div class="row">
-                    <div class="col-sm-7 header-flex">
+                    <div class="col-7 col-sm-7 header-flex">
                         <a id="menuToggle" class="menutoggle pull-left">
                             <i class="fa fa fa-tasks"></i>
                         </a>
                         <div class="header-left">
+                            <button class="navbar-toggler btn" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fa fa-bars"></i>
+                            </button>
                             <button class="search-trigger"><i class="fa fa-search"></i></button>
                             <div class="form-inline">
                                 <form class="search-form">
@@ -263,7 +266,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-5">
+                <div class="col-5 col-sm-5">
                     <div class="user-area dropdown float-right">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar">
@@ -309,18 +312,18 @@
 
     <main>
         <div class="breadcrumbs">
-            <div class="col-sm-4">
-                <div class="page-header float-left">
-                    <div class="page-title">
-                        <div class="breadcrumb_icon small blue">
-                            <i class="menu-icon fa fa-dashboard"></i>
+            <div class="row">
+                <div class="col-8 col-sm-8">
+                    <div class="page-header float-left">
+                        <div class="page-title">
+                            <div class="breadcrumb_icon small blue">
+                                <i class="menu-icon fa fa-dashboard"></i>
+                            </div>
+                            <h1>Dashboard</h1>
                         </div>
-                        <h1>Dashboard</h1>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-8">
-                <div class="page-header float-right">
+                <div class="col-4 col-sm-4 page-header">
                     <div class="page-title">
                         <ol class="breadcrumb text-right">
                             <li class="active">Dashboard</li>
@@ -331,7 +334,7 @@
         </div>
 
         <div class="content mt-3">
-            <div class="col-sm-12">
+            <div class="col-12 col-sm-12">
                 <div class="alert  alert-success alert-dismissible fade show" role="alert">
                     <span class="badge badge-pill badge-success">Success</span> You successfully read this important alert message.
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -341,7 +344,7 @@
             </div>
 
 
-            <div class="col-sm-6 col-lg-3">
+            <div class="col-6 col-sm-6 col-lg-3">
                 <!-- <div class="card text-white bg-flat-color-1"> -->
                     <div class="card text-white red">
                         <div class="card-body pb-0">
@@ -372,7 +375,7 @@
                 </div>
                 <!--/.col-->
 
-                <div class="col-sm-6 col-lg-3">
+                <div class="col-6 col-sm-6 col-lg-3">
                     <div class="card text-white blue">
                         <div class="card-body pb-0">
                             <div class="dropdown float-right">
@@ -401,7 +404,7 @@
                 </div>
                 <!--/.col-->
 
-                <div class="col-sm-6 col-lg-3">
+                <div class="col-6 col-sm-6 col-lg-3">
                     <div class="card text-white green">
                         <div class="card-body pb-0">
                             <div class="dropdown float-right">
@@ -430,7 +433,7 @@
                 </div>
                 <!--/.col-->
 
-                <div class="col-sm-6 col-lg-3">
+                <div class="col-6 col-sm-6 col-lg-3">
                     <div class="card text-white yellow">
                         <div class="card-body pb-0">
                             <div class="dropdown float-right">
